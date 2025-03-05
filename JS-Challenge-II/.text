@@ -1,0 +1,14 @@
+1. Inventory Tracker
+    The code defines two aligned arrays, the inventory for fruit names and inventoryCount for their stock counts. 
+    A for loop iterates through these arrays, using the same index to access and print each fruit with its 
+    corresponding count.
+    Output:
+        apple: 10      For i = 0, it prints "apple: 10".
+        banana: 15      For i = 1, it prints "banana: 15".
+        cherry: 5       For i = 2, it prints "cherry: 5".
+        date: 20        For i = 3, it prints "date: 20".
+        elderberry: 7   For i = 4, it prints "elderberry: 7".
+
+2. Alphabetical Sorting
+    
+    
