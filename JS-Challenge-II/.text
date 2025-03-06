@@ -1,14 +1,66 @@
 1. Inventory Tracker
-    The code defines two aligned arrays, the inventory for fruit names and inventoryCount for their stock counts. 
-    A for loop iterates through these arrays, using the same index to access and print each fruit with its 
-    corresponding count.
-    Output:
-        apple: 10      For i = 0, it prints "apple: 10".
-        banana: 15      For i = 1, it prints "banana: 15".
-        cherry: 5       For i = 2, it prints "cherry: 5".
-        date: 20        For i = 3, it prints "date: 20".
-        elderberry: 7   For i = 4, it prints "elderberry: 7".
+   The code defines two aligned arrays, the inventory for fruit names and inventoryCount for their stock counts.
+   A for loop iterates through these arrays, using the same index to access and print each fruit with its
+   corresponding count.
+   Output:
+   apple: 10 For i = 0, it prints "apple: 10".
+   banana: 15 For i = 1, it prints "banana: 15".
+   cherry: 5 For i = 2, it prints "cherry: 5".
+   date: 20 For i = 3, it prints "date: 20".
+   elderberry: 7 For i = 4, it prints "elderberry: 7".
+
+   T-Diagram:
+   Variable | Value  
+    inventory | ["apple","banana","cherry","date","elderberry"]
+   inventoryCount | [10,15,5,20,7]
+   i | 0->1->2->3->4
 
 2. Alphabetical Sorting
-    
-    
+
+   - words[i] > words[j] compares the strings lexicographically (like dictionary order)
+   - If words[i] comes after words[j], they are swapped
+   - By the end of the loop, the array is sorted in ascending order
+
+   Output:
+   ["apple", "banana", "cherry", "mango", "zebra"]
+
+   T-Diagram
+   Variable | Value
+   words | ["apple", "banana", "cherry", "mango","zebra"]
+   i | 0->1->2->3->4
+   j |  
+   temp | used for swapping, last stored "zebra"
+
+3. Unique Array Builder
+
+   - randomNumber is generated between 1 and 20.
+   - The 'exists' flag checks if the number is already in the array.
+   - If not, the number is added to the array.
+   - The loop continues until the array contains exactly 10 unique numbers.
+
+   Output:
+   [5, 12, 19, 3, 7, 14, 18, 2, 9, 11] (order and numbers will vary)
+
+   T-diagram:
+   Variable | Value
+   uniqueNumbers | Random numbers added until length reaches 10
+   randomNumber | Random (1-20)
+   exists | true (if number exists), false (if not)
+
+4. Triangle Checker
+
+   - The triangle inequality theorem states that the sum of any two sides of a triangle
+     must be greater than the third side.
+   - If this condition is met for all side combinations, the triangle is valid.
+
+   Output:
+   "The sides 7, 10, and 5 form a valid triangle."
+
+   T-diagram
+   Variable | Values
+   sideA | 7
+   sideB | 10
+   sideC | 5
+   sideA+sideB>sideC | 7 + 10>5 ->true
+   sideB+sideC>sideA | 10 + 5 > 7 -> true
+   sideA+sideC>sideB | 7 + 5 > 10 -> true
