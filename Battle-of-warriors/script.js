@@ -19,7 +19,7 @@ let secondWarrior={
 //loop for 10 rounds
 for (let i=1; i<=10; i++){
     console.log(`Round ${i}:`);
-
+    
     let damage1= firstWarrior.attack();
     let damage2= secondWarrior.attack();
 
