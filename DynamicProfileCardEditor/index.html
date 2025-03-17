@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Profile Card Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="profile-card" id="profilecard">
+        <img id="profile-pic" src="images/Taylor-Swift-2024-2.jpg" alt="taylor">
+        <h2 id="prof-name">Taylor Swift</h2>
+        <p id="prof-description">American singer-songwriter</p>
+
+        <form>
+            <h3>Update Name:</h3>
+            <input id="update-name" type="text">
+            <button type="button" onclick="updateName()">Update Name</button>
+
+            <h3>Update Bio:</h3>
+            <input id="update-bio" type="text">
+            <button type="button" onclick="updateBio()">Update Bio</button>
+
+            <h3>Update Image URL:</h3>
+            <input id="update-url" type="text">
+            <button type="button" onclick="updateURL()">Update Image:</button>
+
+            <h3>Change Background Color:</h3>
+            <input type="color" id="backgroundColor" onchange="updatebgcolor()">
+            <button type="button" onclick="updatebgColor()">Update Background Color</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

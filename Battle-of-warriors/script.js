@@ -1,7 +1,7 @@
 let firstWarrior={
     name: 'Thor',
     hp: 100,
-    strength: 10,
+    strength: 50,
     attack: function () {
         return this.strength;
     }
