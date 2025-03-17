@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f8f8f8;
+}
+
+#showNotif {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: lightgray;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#showNotif:hover {
+    background-color: white;
+}
+
+#notifContainer {
+    width: 350px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.notification {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification .close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
